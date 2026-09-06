@@ -1,6 +1,6 @@
 ---
 name: clean-ui
-description: Design, build, or substantially refine polished React and Next.js interfaces. Use when creating pages, dashboards, application shells, or component systems where visual direction, component selection, responsive behavior, accessibility, and restrained motion matter. Do not use for narrow logic-only changes or trivial CSS fixes.
+description: Design, build, or substantially refine distinctive React and Next.js interfaces using at least one approved curated component library. Use when creating pages, dashboards, application shells, or component systems where product analysis, library adoption, visual direction, responsive behavior, accessibility, and restrained motion matter. Do not use for narrow logic-only changes or trivial CSS fixes.
 ---
 
 # Clean UI
@@ -13,7 +13,7 @@ Create a cohesive, product-specific interface, not a collage of attractive compo
 2. Summarize the product model internally: subject, audience, primary jobs, route families, repeated interaction patterns, brand signals, constraints, and gaps. Infer low-risk details; ask only when a missing product decision would materially change the result.
 3. For a new design or substantial redesign, research relevant references on Recent.design. Read [references/inspiration.md](references/inspiration.md). Extract principles from several relevant examples; never reproduce a reference's layout, copy, branding, or distinctive signature.
 4. Define a compact visual thesis grounded in this product: typography, palette, density, layout logic, radius, elevation, motion character, and one defensible signature idea. Read [references/design-system.md](references/design-system.md). Critique the thesis for generic or previously repeated patterns before building.
-5. Map the product to semantic component roles. Choose one primary component library and one primary icon family for consistency; existing project systems count as a choice. Add a specialist library only for a capability the primary system cannot supply. Read [references/component-selection.md](references/component-selection.md).
+5. Map every visible UI role to candidate components from the approved catalogs. Choose and install at least one qualifying curated component library from the user's approved list; the existing project system alone does not satisfy this requirement. Prefer the chosen library for every suitable role, and use additional approved libraries when they add a genuinely useful signature interaction or missing capability. Read [references/component-selection.md](references/component-selection.md) and follow its adoption contract.
 6. Decide whether auditory feedback adds meaningful confirmation or orientation. When it does, use Cuelume sparingly according to [references/sound.md](references/sound.md); otherwise keep the interface silent.
 7. Implement complete interaction states: default, hover, focus, pressed, disabled, loading, empty, error, and success where applicable.
 8. Verify the rendered product across its affected routes at mobile and desktop sizes. Read [references/verification.md](references/verification.md) before finalizing substantial UI work.
@@ -21,11 +21,14 @@ Create a cohesive, product-specific interface, not a collage of attractive compo
 ## Non-negotiables
 
 - Never silently overwrite a modified component. Inspect, adapt, or ask before replacement.
-- Do not mix unrelated visual languages merely to use more libraries. One dominant system plus a restrained accent pattern is usually enough.
+- At least one of OpenSourceUI, Unlumen, Morphin, Skiper UI, or Beautiful UI/beUI must be installed and visibly rendered in every new UI or substantial redesign. Base shadcn/Radix components, an icon library, Transitions.dev, Cuelume, and Recent.design do not count toward this requirement.
+- For a substantial page or app, use several suitable components from the selected library rather than installing a token example. Aim for three or more distinct rendered components from the primary library whenever its catalog contains relevant choices.
+- Multiple approved component libraries are allowed. Keep a single visual thesis and restyle secondary-library components so the result remains cohesive.
 - Do not automatically reuse the same library, palette, hero composition, typography pairing, or signature interaction from prior work. Let product fit determine each choice and document the reason.
 - Avoid generic dashboard output: repetitive floating cards, arbitrary gradients, excessive pills, and ornamental charts without product meaning.
 - Use semantic HTML, visible keyboard focus, adequate contrast, descriptive control labels, and reduced-motion behavior.
 - Keep copied components editable in the project and adapt demo content, imports, tokens, and states to the application.
+- Installed-but-unused components do not count. Each selected component must be imported and rendered in a real route or product flow.
 - Verify license and free/paid status before copying source. Never bypass authentication or copy Pro components without access.
 - Do not add animation unless it explains hierarchy, continuity, causality, or feedback.
 - Do not add sound as decoration, autoplay it on first load, or make it the only signal for a state.
@@ -38,4 +41,4 @@ Do not block the UI task if that skill is unavailable. Use restrained CSS transi
 
 ## Completion
 
-Run the project's typecheck, lint, tests, and production build when available. Inspect browser output, console errors, overflow, keyboard flow, focus, loading/empty/error states, and reduced motion. Report material design choices, installed components, verification performed, and any remaining limitation.
+Do not declare completion until the component-library adoption gate in [references/verification.md](references/verification.md) passes. Run the project's typecheck, lint, tests, and production build when available. Inspect browser output, console errors, overflow, keyboard flow, focus, loading/empty/error states, and reduced motion. Report the chosen libraries, every installed and rendered curated component, where each is used, material design choices, verification performed, and any remaining limitation.

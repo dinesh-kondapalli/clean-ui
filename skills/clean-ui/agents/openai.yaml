@@ -1,6 +1,6 @@
 interface:
   display_name: "Clean UI"
-  short_description: "Design clean, cohesive application interfaces"
-  default_prompt: "Use $clean-ui to design and implement a polished interface for this application."
+  short_description: "Build distinctive UIs with curated components"
+  default_prompt: "Use $clean-ui to analyze this product, select and visibly use suitable curated-library components, and implement a distinctive polished interface."
 policy:
   allow_implicit_invocation: true
