@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "name": "tactile-3d",
+      "title": "Tactile 3D",
+      "description": "Tactile keycap-style button with solid, soft, and muted variants.",
+      "aliases": ["3d-button", "button", "three-d-button", "tactile-button"],
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        { "source": "components/cn.ts", "target": "cn.ts", "kind": "lib" },
+        { "source": "components/tactile-3d.tsx", "target": "tactile-3d.tsx", "kind": "component" }
+      ],
+      "sourceUrl": "https://opensourceui.in/components/3d-button",
+      "license": "MIT"
+    },
+    {
+      "name": "tactile-3d-icon",
+      "title": "Tactile 3D Icon",
+      "description": "Accessible square icon button using the tactile 3D material.",
+      "aliases": ["3d-icon", "3d-icon-button", "three-d-icon-button"],
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        { "source": "components/cn.ts", "target": "cn.ts", "kind": "lib" },
+        { "source": "components/tactile-3d-icon.tsx", "target": "tactile-3d-icon.tsx", "kind": "component" }
+      ],
+      "sourceUrl": "https://opensourceui.in/components/3d-icon-button",
+      "license": "MIT"
+    }
+  ]
+}

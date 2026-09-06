@@ -1,0 +1,6 @@
+interface:
+  display_name: "Clean UI"
+  short_description: "Design clean, cohesive application interfaces"
+  default_prompt: "Use $clean-ui to design and implement a polished interface for this application."
+policy:
+  allow_implicit_invocation: true

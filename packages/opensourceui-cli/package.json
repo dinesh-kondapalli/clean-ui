@@ -1,0 +1,11 @@
+{
+  "name": "opensourceui",
+  "version": "0.1.0",
+  "description": "Install editable OpenSourceUI components into React projects",
+  "type": "module",
+  "bin": { "opensourceui": "./src/cli.ts" },
+  "files": ["src", "registry", "LICENSE"],
+  "scripts": { "test": "bun test" },
+  "engines": { "bun": ">=1.1.0" },
+  "license": "MIT"
+}
