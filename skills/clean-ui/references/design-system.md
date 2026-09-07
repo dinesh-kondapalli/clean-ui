@@ -15,7 +15,7 @@ Match density to the task. Operational tools may be compact; marketing and onboa
 
 Use cards only when a bounded surface has semantic meaning. Do not wrap every section in a card. Charts must answer a product question and include readable labels or summaries.
 
-At least one approved library component should carry or reinforce the signature idea. Adapt it rather than reproducing its catalog demo. The surrounding composition, content, typography, and interaction should make it feel native to this product.
+Approved library components must support the planned product tasks and composition. The signature may come from the information layout or interaction itself; do not force a showpiece component into an unrelated region. Adapt catalog components to the product's content, typography, density, and state model.
 
 Responsive design is recomposition, not uniform shrinking. Preserve the primary task, collapse secondary controls deliberately, prevent horizontal overflow, and keep touch targets usable.
 
