@@ -26,6 +26,7 @@ If no qualifying component is rendered, the work is incomplete regardless of typ
 ## Rendered checks
 
 - Apply [craft.md](craft.md) to the affected routes and their relevant states.
+- Apply [rejected-ui.md](rejected-ui.md), including its sidebar and whole-page review. Visually compare the bundled negative example with the implemented shell and final layout; record any repeated problems and recheck corrections. Library provenance alone does not pass this check.
 - Inspect at a narrow mobile viewport and a representative desktop viewport.
 - Check overflow, clipping, sticky/fixed elements, long labels, empty data, and loading transitions.
 - Navigate all interactive controls with the keyboard; verify logical order and visible focus.
